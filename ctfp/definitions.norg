@@ -1,15 +1,15 @@
 * Definitions
 **  Category
     A category contains
-    -- *Objects*: Members of the category.
-    -- *Morphisms*: Arrows from a source object to a target object. A morphism /f/ going
-       from object /a/ to object /b/ is denoted as /f/: /a/ -> /b/.
-    -- *Composition*: A definition of how 2 morphisms are composed. Denoted by a dot (.).
-       It shall satisfy:
-    --- *Associativity*: Given 3 morphisms /f/: /a/ -> /b/, /g/: /b/ -> /c/, and
-        /h/: -> /c/ -> /d/, then /h/ . (/g/ . /f/) = (/h/ . /g/) . /f/
-    --- *Identity*: For each object /x/, there shall be a morphism /1x/: /x/ -> /x/. For
-        all every morphism /f/: /a/ -> /b/, we have /1b/ . /f/ = /f/ = /f/ . /1a/
+    - *Objects*: Members of the category.
+    - *Morphisms*: Arrows from a source object to a target object. A morphism /f/ going
+      from object /a/ to object /b/ is denoted as /f/: /a/ -> /b/.
+    - *Composition*: A definition of how 2 morphisms are composed. Denoted by a dot (.).
+      It shall satisfy:
+    -- *Associativity*: Given 3 morphisms /f/: /a/ -> /b/, /g/: /b/ -> /c/, and
+       /h/: -> /c/ -> /d/, then /h/ . (/g/ . /f/) = (/h/ . /g/) . /f/
+    -- *Identity*: For each object /x/, there shall be a morphism /1x/: /x/ -> /x/. For
+       all every morphism /f/: /a/ -> /b/, we have /1b/ . /f/ = /f/ = /f/ . /1a/
 
 ** Hom-set
    A hom-set *C*\(/X/, /Y/) is a set of morphisms from an object /X/ to an object /Y/ in
@@ -21,18 +21,18 @@
 
 ** Functor
    A functor /F/ from category *C* to category *D* shall
-   -- associate each object in *C* to an object in *D*.
-   -- associate each morphism in *C* to a morphism in *D* such that
-   --- /F/\(id *C*) = id *D*
-   --- /F/\(/g/ . /f/) = /F/\(/g/) . /F/(/f/) for /f/ and /g/ being morphisms in *C*
+   - associate each object in *C* to an object in *D*.
+   - associate each morphism in *C* to a morphism in *D* such that
+   -- /F/\(id *C*) = id *D*
+   -- /F/\(/g/ . /f/) = /F/\(/g/) . /F/(/f/) for /f/ and /g/ being morphisms in *C*
 
 ** Natural transformation $\\Eta$:
    Given a functor /F/ and a functor /G/ from category *C* to category *D*, a natural
    transformation $\\Eta$ from /F/ to /G/ is a family of morphisms in *D* such that
-   -- for every /c/ object in *C*, $\\Eta$ has a morphism /F/\(/c/) -> /G/\(/c/).
-      This morphism is denoted as $\\Eta$ /c/ and is called the component of
-      $\\Eta$ at /c/
-   -- for every morphism *f*: /x/ -> /y/ in *C*, there is a morphism $\\Eta$ /x/ and a
-      morphism $\\Eta$ /y/ such that
-      $\\Eta$ /y/ . /F/\(*f*) = /G/\(*f*) . $\\Eta$ /x/
+   - for every /c/ object in *C*, $\\Eta$ has a morphism /F/\(/c/) -> /G/\(/c/).
+     This morphism is denoted as $\\Eta$ /c/ and is called the component of
+     $\\Eta$ at /c/
+   - for every morphism *f*: /x/ -> /y/ in *C*, there is a morphism $\\Eta$ /x/ and a
+     morphism $\\Eta$ /y/ such that
+     $\\Eta$ /y/ . /F/\(*f*) = /G/\(*f*) . $\\Eta$ /x/
 
