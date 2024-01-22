@@ -1,0 +1,30 @@
+* Glossary
+** Collection: Database
+** Relation: Table
+* Definitions
+** Candidate Key (Key)
+   A set of columns that
+   - has unique values in each row
+   - is minimal, i.e. removing any column from that set makes its values stop being
+     unique
+
+** Prime Attribute
+   A column that are part of a {** Candidate Key}[candidate key].
+** Non-prime Attribute
+   A column that are not a part of a {** Candidate Key}[candidate key].
+** Functional Dependency
+   A set of attributes /A/ has a functional dependency on a set of attributes /B/ iff
+   /A/ can be determined using /B/. /A/ has a *full functional dependency* on /B/ iff
+   all attributes of /B/ are needed to determine /A/.
+
+** Normalization
+   All normalization forms have to fulfill their previous form.
+*** 1NF
+    Columns contain only scalar values, i.e. a column cannot contain a list of values.
+*** 2NF
+    Every {** Non-prime Attribute}[non-prime attribute] has a full {** Functional Dependency}[functional dependency] on a {** Candidate Key}[candidate key].
+**** Optimal 2NF
+     A 2NF collection that has the minimum number of relations.
+*** 3NF
+    Every {** Non-prime Attribute}[non-prime attribute] is non-transitively dependent on each {** Candidate Key}[candidate key].
+
