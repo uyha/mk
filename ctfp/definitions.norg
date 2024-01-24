@@ -1,6 +1,6 @@
 * Definitions
 **  Category
-    A category contains
+    A category contains:
     - *Objects*: Members of the category.
     - *Morphisms*: Arrows from a source object to a target object. A morphism /f/ going
       from object /a/ to object /b/ is denoted as /f/: /a/ -> /b/.
@@ -20,7 +20,7 @@
    category are total functions, and the composition is function composition.
 
 ** Functor
-   A functor /F/ from category *C* to category *D* shall
+   A functor /F/ from category *C* to category *D* shall:
    - associate each object in *C* to an object in *D*.
    - associate each morphism in *C* to a morphism in *D* such that
    -- /F/\(id *C*) = id *D*
@@ -28,7 +28,7 @@
 
 ** Natural transformation $\\Eta$:
    Given a functor /F/ and a functor /G/ from category *C* to category *D*, a natural
-   transformation $\\Eta$ from /F/ to /G/ is a family of morphisms in *D* such that
+   transformation $\\Eta$ from /F/ to /G/ is a family of morphisms in *D* such that:
    - for every /c/ object in *C*, $\\Eta$ has a morphism /F/\(/c/) -> /G/\(/c/).
      This morphism is denoted as $\\Eta$ /c/ and is called the component of
      $\\Eta$ at /c/
