@@ -11,6 +11,17 @@
     -- *Identity*: For each object /x/, there shall be a morphism /1x/: /x/ -> /x/. For
        all every morphism /f/: /a/ -> /b/, we have /1b/ . /f/ = /f/ = /f/ . /1a/
 
+** Opposite Category
+   A category *C*^op^ is the opposite category of *C*, it is the same as *C* except its
+   morphisms are in reversed direction.
+
+** Product Category
+   A category *C* $x$ *D* is called a *Product Category* of *C* and *D* whose:
+   - *Objects*: a pair (/c/, /d/) where /c/ and /d/ are objects of *C* and *D*, respectively.
+   - *Morphisms*: a pair (*f*, *g*) where *f* and *g* are morphisms of *C* and *D*, respectively.
+   - *Composition*: (*f2*, *g2*) . (*f1*, *g1*) = (*f2* . *f1*, *g2* . *g1*)
+   - *Identity*: /1/(*C*, *D*) = (/1/*C*, /1/*D*)
+
 ** Hom-set
    A hom-set *C*\(/X/, /Y/) is a set of morphisms from an object /X/ to an object /Y/ in
    category *C*.
@@ -25,6 +36,11 @@
    - associate each morphism in *C* to a morphism in *D* such that
    -- /F/\(id *C*) = id *D*
    -- /F/\(/g/ . /f/) = /F/\(/g/) . /F/(/f/) for /f/ and /g/ being morphisms in *C*
+
+** Bifunctor / Multifunctor
+   A multifunctor is a functor whose domain is a {** Product Category}[product category] from $n$ categories.
+
+   A bifunctor is a multifunctor of 2 categories.
 
 ** Natural transformation $\\Eta$:
    Given a functor /F/ and a functor /G/ from category *C* to category *D*, a natural
