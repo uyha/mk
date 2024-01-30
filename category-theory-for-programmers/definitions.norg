@@ -42,6 +42,9 @@
 
    A bifunctor is a multifunctor of 2 categories.
 
+** Endofunctor
+   A functor that starts and ends at a same category.
+
 ** Natural transformation $\\Eta$:
    Given a functor /F/ and a functor /G/ from category *C* to category *D*, a natural
    transformation $\\Eta$ from /F/ to /G/ is a family of morphisms in *D* such that:
