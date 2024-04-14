@@ -22,6 +22,11 @@
    - *Composition*: (*f2*, *g2*) . (*f1*, *g1*) = (*f2* . *f1*, *g2* . *g1*)
    - *Identity*: /1/(*C*, *D*) = (/1/*C*, /1/*D*)
 
+** Monoidal Category
+   A category *C* equipped with a monoidal structure is called a *Monoidal Category*.
+   This structure consists of:
+   - A {** Bifunctor / Multifunctor}[bifunctor] \*: *C* $x$ *C* -> *C*
+
 ** Hom-set
    A hom-set *C*\(/X/, /Y/) is a set of morphisms from an object /X/ to an object /Y/ in
    category *C*.
